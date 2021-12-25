@@ -12,7 +12,7 @@ import os
 # Note: This isn't exactly the same as a "percent match". The scale isn't linear. But you can assume that images with a
 # smaller distance are more similar to each other than ones with a larger distance.
 
-v_dir = "/home/ljy/face_reco/video/"
+v_dir = "video/"
 if not os.path.exists('temp/'):
     os.mkdir('temp')
 count = 0
@@ -39,7 +39,7 @@ for eachVid in os.listdir(v_dir):
         #print('Read a new frame: ', success)
 
 #image to test
-image_to_test = face_recognition.load_image_file("laugh.jpg")
+image_to_test = face_recognition.load_image_file("person.jpg")
 image_to_test_encoding = face_recognition.face_encodings(image_to_test)[0]
 
 for eachjudge in os.listdir("temp"):
