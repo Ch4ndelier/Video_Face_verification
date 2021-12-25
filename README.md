@@ -8,4 +8,4 @@ put your videos in video/
 
 change the picture name as `person.jpg` if you want to verify a different person.
 
-and run `python face_recognition_for_video`
+and run `python face_recognition_for_video.py`
